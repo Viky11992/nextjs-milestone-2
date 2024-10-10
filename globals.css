@@ -1,0 +1,412 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+
+}
+body{
+  max-width: 100vw;
+  height: 100vh;
+  background-color: rgb(1, 21, 31);
+
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(1, 21, 31);
+}
+.nev{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  
+ 
+}
+.box{
+  height: 50px;
+  width: 50px;
+  background-color:rgb(1, 21, 31);
+  margin-left: 20px;
+  color: chartreuse;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.box:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box{
+ 
+  animation: rotate 3s linear infinite;
+}
+
+span{
+  color:rgb(1, 21, 31);
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-left: 2px;
+  color: white;
+  transition: transform 1.5s ease;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+span {
+  animation: fadeIn 2s ease-in-out;
+}
+span:hover{
+  transform: scale(0.8);
+  color: chartreuse;
+}
+.left{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  gap: 10px;
+  padding: 10px;
+  color: rgb(1, 21, 31);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-left: 1px;
+  color: white;
+  transition: transform 1.5s ease;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  
+  
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.left {
+  animation: fadeIn 2s ease-in-out;
+}
+.left:hover{
+
+  color: chartreuse;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.left {
+  animation: zoomIn 2s ease-in-out;
+}
+.center{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.center-left{
+  height: 90%;
+  width: 60%;
+  margin-top: 95px;
+  
+}
+.center-right{
+  height: 90%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.center-right img{
+  height: 65%;
+  width: 65%;
+  border-radius: 30px;
+  border:3px solid chartreuse;
+  transition: transform 1.9s ease;
+  filter: grayscale(100%);
+
+  
+}
+.center-right img:hover{
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+.center-left h1{
+  font-size: 45px;
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+  font-weight: 900;
+  color: chartreuse;
+  text-shadow: 2px 2px 5px rgb(247, 165, 165);
+
+}
+
+.center-left h3{
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+  color: white;
+  text-align: justify;
+}
+.aboutmain{
+  height: 90vh;
+  width:98.5vw;
+}
+.curve{
+  text-align: left;
+  width: 82%;
+  background-color: rgb(11, 45, 62);
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 25px;
+}
+.abouth1{
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  color: chartreuse;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.aboutmain h2{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  color: chartreuse;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  
+}
+
+.aboutmain p{
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+ul{
+color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  
+}
+li{
+
+  display:inline;
+  margin: 10px;
+  
+}
+.contect-main{
+  height: 100%;
+  width: 100%;
+}
+.contect-center{
+  height: 87.5%;
+  width: 100%;
+
+  display: flex;
+  gap: 90px;
+}
+.contect-left{
+  height: auto;
+  width: 50%;
+}
+.contect-right{
+  height: 100%;
+  width: 40%;
+}
+.contecth1{
+  color: chartreuse;
+  font-size:45px;
+  margin-left: 30px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.contectp{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 30px;
+}
+.link{
+  color: chartreuse;
+  font-size: 20px;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  padding: 20px;
+}
+legend{
+  font-size: 2rem;
+  padding: 10px;
+  color: chartreuse;
+
+}
+fieldset{
+  border: 2px solid chartreuse;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  
+  
+}
+label{
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 10px;
+}
+input{
+  height: 40px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+textarea{
+  height: auto;
+  width: 80%;
+  color: black;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+}
+
+button{
+  width: 50%;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 65px;
+}
+button:hover,input:hover,textarea:hover{
+  background-color: rgb(141, 213, 248);
+  color: white;
+}
+
+
+
+
+@media (max-width:600px) {
+  .center{
+    display: inline;
+  }
+  .center-left h1{
+    font-size: 1.7rem;
+  }
+  .center-right{
+    display: inline;
+  }
+  .center-left h3{
+    width: 160%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+  .center-right img{
+   height: 45%;
+   width: 45%;
+   position: relative;
+   top: -20%;
+   left: 25%;
+
+  }
+  li{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    font-weight:700;
+    margin: 2px;
+  }
+  .aboutmain p{
+    margin: 1px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .contect-center{
+    display: inline;
+  }
+  .contecth1{
+    font-size: 2rem;
+  }
+  .contectp{
+    width: 190%;
+    padding-right: 10px;
+    text-align: justify;
+    letter-spacing: 0.6px;
+  }
+  .link{
+    gap: 85px;
+    margin-left: 15px;
+  }
+ fieldset{
+    width: 225%;
+    font-size: 1.2rem;
+    margin-left: 35px;
+  }
+}
